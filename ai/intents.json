@@ -1,0 +1,63 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+
+        {"tag": "options_1",
+         "patterns": ["Can you help me please?", "How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can help you with complaints, especially regarding your order.", "Yes, is there something wrong with your order? Or do you have a general complaint?"],
+         "context": [""]
+        },
+        {"tag": "options_2",
+         "patterns": ["I have a complaint about my order", "I have troubles with my order", "There is a problem with the delivery", "I have a problem"],
+         "responses": ["Tell me, have your goods arrived yet? Is there a problem with the product?", "So, is there a problem with the product, or has it not even arrived yet?"],
+         "context": [""]
+        },
+        
+        {"tag": "GOODS_DAMAGED",
+         "patterns": ["Order is damaged", "Order damaged", "It's broken", "My ordered product doesn't work", "The product arrived broken", "I received a broken package", "It seems there is a defect", "It doesn't work, I think it's broken", "It is damaged", "You sent me a damaged package"],
+         "responses": ["Oh! We are so sorry! Would you like a refund or redelivery?", "We are sorry to hear that! We could offer you a refund or redelivery. What suits you best?"],
+         "context": [""]
+        },
+
+
+
+        {"tag": "GENERAL_COMPLAINT",
+         "patterns": ["My order is ok", "I have no problems with my order", "I have a complaint", "General", "Just some problem", "I want to talk to the manager", "I hate you", "No, this is not right", "Something completely different went wrong"],
+         "responses": ["General complaint"],
+         "context": [""]
+        },
+        {"tag": "ORDER_NOT_RECEIVED",
+         "patterns": ["It has not arrived yet", "My order never arrived", "I have not received my package", "I didn't receive my order", "I am waiting for my order now for too long"],
+         "responses": ["Order not received"],
+         "context": [""]
+        },
+        {"tag": "REDELIVERY",
+         "patterns": ["Can you redeliver it?", "I want a new delivery", "Could you resend the package?", "Please resend my order", "Resend it", "Try delivering it again", "Just send me a new one"],
+         "responses": ["Redelivery"],
+         "context": [""]
+        },
+        {"tag": "REFUND",
+         "patterns": ["I want my money back", "A refund would be nice", "I will send you the order back, but I will not pay", "I am not gonna pay for this", "You should pay me back", "I demand a full refund"],
+         "responses": ["Refund"],
+         "context": [""]
+        }
+   ]
+}
